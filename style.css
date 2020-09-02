@@ -1,0 +1,145 @@
+
+body {
+    background: #c5c5c5;
+    font-family: 'Times New Roman', Times, serif
+  }
+  
+  .jumbotron h1 {
+    text-align: left;
+    font-size: 40px;
+    color: #5eb8a4;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .h3 {
+    font-size: 30px;
+  }
+  
+  /* Giving our navbar some padding and a background color */
+  .navbar {
+    padding: 30px;
+    background: #5eb8a4;
+  }
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .navbar li {
+    display: inline-block;
+    background-color:#5eb8a4;
+    padding: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+ 
+  
+  /* Styling the header, giving it a height, a background color, and some top padding */
+  .header {
+    height: 200px;
+    padding-top: 20px;
+    background: white;
+    color: #5eb8a4;
+  }
+.col {
+  font-size: 12px;
+  color: black;
+  background-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  border: #c5c5c5;
+  border-style: solid;
+  border-width: 10px;
+  }
+.col h1 {
+  text-align: center;
+  font-size: 40px;
+  color: black;
+  background-color: white;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+  
+
+
+  /* Giving our navbar some padding and a background color */
+.navbar-brand {
+  background: white;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+  .navbar {
+  padding: 30px;
+  background: #5eb8a4;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-style: bold;
+  ;
+}
+
+/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+.nav {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  align-items: right;
+}
+
+/* Getting rid of the default link styles here */
+.nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+.jumbotron {
+  background-color: white;
+  font-size: medium;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.container {
+  background-color: white;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+h4{
+  font-size: 10px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .content {
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px
+  }
+
+
+  @media (max-width: 600px) {
+    .navbar li  {
+      background: #f1e080;
+    } 
+  

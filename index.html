@@ -1,45 +1,88 @@
 <!DOCTYPE html>
-<html lang-"en-us">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>My first page</title>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-    <!--Header-->
-    <h1>My name is Amy</h1>
-    <!--Image-->
-    <img src="https://www.k9rl.com/wp-content/uploads/2015/12/Boxer-puppy-brindle.jpg"  alt="Picture of hashi">
-    <h3>My name is Amy. I am a student of the Data Analytics Bootcamp at UCI.  I am 26 and I live in Los Angeles.</h3>
-    <h3>I like my dog.</h3>
-    <br>
-    <ul>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand btn-light rounded nav-button" href="index.html">Home</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Scatterplots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Home Page</h1>
+          <article>
+            <img src="maxtemp.png" class="center">
+          
+            <p>The purpose of this project was to analyze how the weather changes as you get closer to the equator. To accomploish this analysis, we first pulled data from the OpenWeatherMap API to assemble a database on over 500 cities.</p>
+            <p>After assembling the dataset by utlizing Python and OpenWeatherMap API, scatterplots were created in order to btter visualize the relationship between Latitiude and Max Temperature, Latitude and Humidity, Latitude and Cloudiness, and Latitude and Wind Speed to help create a representative model of weather across the world</p>
+        </article>
+        </div>
+          <div class="col">
+          <h3>Visualizations</h3>
+                <div class="row">
+                    <div class="col-3 col-md-6">
+                      <h4>Latitude vs. Max Temperature</h4>
+                        <a href="maxtemp.html"><img src="maxtemp.png" width="100%"  alt="temperature"></a> 
+                    </div>
+                    <div class="col-3 col-md-6">
+                      <h4>Latitude vs. Humidity</h4>
+                        <a href="humidity.html"><img src="humidity.png" width="100%" alt="humidity"></a>
+                    </div>
+                    <div class="col-3 col-md-6">
+                      <h4>Latitude vs. Cloudiness</h4>
+                        <a href="cloudiness.html"><img src="cloudiness.png" width="100%"  alt="cloudiness"></a>
+                    </div>
+                    <div class="col-3 col-md-6">
+                      <h4>Latitude vs. Windspeed</h4>
+                        <a href="windspeed.html"><img src="windspeed.png"width="100%"  alt="wind speed"></a>
+                    </div>
+                </div>
+       
+
+
+       
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
-        <li><a href="https://www.twitter.com/supimamy" target="_blank">Twitter</a>
-        <li><a href="https://www.instagram.com/_amyvong" target="_blank">Instagram</a>
+        </body>
         
+        </html>
         
-    </ul>
-    <br>
-    <table>
-      <thead>
-          <tr>
-              <th>Podcasts</th>
-              <th>Books</h>
-              <th>Activities</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>the Michelle Obama Podcast</td>
-              <td>The subtle art of not giving a eff</td>
-              <td>Cooking</td>
-          </tr>
-          <tr>
-              <td>the read</td>
-              <td>HP series</td>
-              <td>training my pup</td>
-           </tr>
-      </tbody>
-  </table>
-</body>
-</html>
